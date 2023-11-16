@@ -1,7 +1,5 @@
 # Finch CDK Demo
 
-## Overview
-
 ## Prerequisites
 
 1. Install [Finch](https://github.com/runfinch/finch)
@@ -11,8 +9,8 @@
 ## Walkthrough
 
 The AWS CDK can bundle assets, and a common way to bundle artifacts is to use container images.
-While some folks use Docker to build their images, other folks may prefer to use other clients to build their container images.
-Let's walk through how folks can do this using the AWS CDK.
+While some folks use Docker to build their images, others may prefer to use open source alternatives to build their container images.
+Let's walk through how Finch can be used to bundle and push container images using the AWS CDK.
 
 1. The first step is to set the CDK_DOCKER environment variable.
    This will tell the cdk which client to use for building the container image.
