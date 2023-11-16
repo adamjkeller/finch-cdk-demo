@@ -1,13 +1,11 @@
-import { awscdk } from 'projen';
+import { awscdk } from "projen";
 const project = new awscdk.AwsCdkTypeScriptApp({
-  cdkVersion: '2.1.0',
-  defaultReleaseBranch: 'main',
-  name: 'finch-cdk-demo',
+  cdkVersion: "2.109.0",
+  defaultReleaseBranch: "main",
+  name: "finch-cdk-demo",
   projenrcTs: true,
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: ["@aws-cdk/app-staging-synthesizer-alpha@^2.109.0-alpha.0"],
+  dependabot: true,
+  gitignore: ["outputs.json", "response.json"],
 });
 project.synth();

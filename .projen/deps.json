@@ -21,7 +21,7 @@
     },
     {
       "name": "aws-cdk",
-      "version": "^2.1.0",
+      "version": "^2.109.0",
       "type": "build"
     },
     {
@@ -51,11 +51,6 @@
       "type": "build"
     },
     {
-      "name": "npm-check-updates",
-      "version": "^16",
-      "type": "build"
-    },
-    {
       "name": "projen",
       "type": "build"
     },
@@ -72,8 +67,13 @@
       "type": "build"
     },
     {
+      "name": "@aws-cdk/app-staging-synthesizer-alpha",
+      "version": "^2.109.0-alpha.0",
+      "type": "runtime"
+    },
+    {
       "name": "aws-cdk-lib",
-      "version": "^2.1.0",
+      "version": "^2.109.0",
       "type": "runtime"
     },
     {
